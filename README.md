@@ -20,7 +20,8 @@ mark character (\x{0D}) in all the files with nothing. No idea why that happens.
 
 Make a WeatherCat backup!!!!!!
 
-REVIEW THE DATA OUTPUT AND MAKE SURE IT MAKES SENSE BEFORE COPYING TO WEATHERCAT DATA FOLDER!<-----
+REVIEW THE DATA OUTPUT AND MAKE SURE IT MAKES SENSE BEFORE COPYING TO WEATHERCAT DATA FOLDER!
+
 QAQC IS IMPORTANT
 
 Copy year folders, being sure you don't overwrite existing data, to (usually):
