@@ -18,5 +18,12 @@ It is important to clean up your CSV data from MesoWest and/or Synoptic.
 When the script is done, use bbedit multi-file find and replace the odd upside-down question 
 mark character (\x{0D}) in all the files with nothing. No idea why that happens.
 
+----->REVIEW THE DATA OUTPUT AND MAKE SURE IT MAKES SENSE BEFORE COPYING TO WEATHERCAT DATA FOLDER!<-----
+----->QAQC IS IMPORTANT<------
+
+Copy year folders, being sure you don't overwrite existing data, to (usually):
+WeatherCat Data folder is at ~/Library/WeatherCatData/Location1
+You may need to append or prefix data in existing WeatherCat data files. If you do that, delete the related .hrs files.
+
 If you have to rerun the script to tweak things, delete all the previous file outputs! 
 Else data will append. This script does no clean-up.
