@@ -9,7 +9,7 @@ from os.path import exists
 # CHANGE THESE TWO VARIABLES
 startYear = "2018" # year the historical weather data starts
 filename = 'F2476.2023-08-13-b.csv' # filename of MesoWest/Synoptic CSV file
-inUTC = True
+inUTC = True # set to False if date and time in CSV is in local time
 
 # Start Fresh
 lineNumber = 1 # need to start WeatherCat data line numbers at 1, though they might not be strictly necessary.
