@@ -4,9 +4,10 @@ LWC format from [https://www.merewether.com/blog/import-wview-data-into-lightsof
 
 And of course later I found out that WeatherCat has basically the same format but with more tags.
 
-It is important to clean up your CSV data from MesoWest and/or Synoptic. 
-Use Numbers 
-1. get rid of rows that have blank key rows such as air_temp_set_1 and precip_accum_*. 
+It is important to clean up your CSV data from MesoWest and/or Synoptic.
+
+1. Use the macOS app Numbers to open the CSV. 
+1. get rid of rows that have blank key attributes in fields such as air_temp_set_1 and precip_accum_*. 
 1. Then delete the metadata at the top, but retain the first header row and delete the second row of units
 1. Then by Date_Time column, sort ascending so that time progress forwards toward the end of the file.
 1. After that, export the data back out to CSV for processing.
