@@ -2,26 +2,7 @@ import csv
 from datetime import datetime, timezone
 from os.path import exists
 
-#LWC format from https://www.merewether.com/blog/import-wview-data-into-lightsoft-weather-center/242703
-#And of course later I found out that WeatherCat has basically the same format but with more tags.
-
-# It is important to clean up your data from Synoptic. 
-# Use Numbers 
-# --> get rid of rows that have blank key rows such as air_temp_set_1 and precip_accum_*. 
-# --> Then delete the metadata at the top, but retain the first header row and delete the 
-#     second row of units
-# --> Then by Date_Time column, sort ascending. 
-# --> After that, export the data back out to CSV for processing.
-# --> Then create folders for each year there's data for. Just named YYYY (2018, 2019 etc).
-# --> Put this script in their parent folder, change the variable for the starting year and 
-# the CSV file name.  Then review the script’s code to make sure it’ll work for you, then
-# run the script using python3
-#
-# When the script is done, use bbedit multi-file find and replace the odd upside-down question 
-# mark character \x{0D} in all the files with nothing. No idea why that happens.
-#
-# If you have to rerun the script to tweak things, delete all the previous file outputs! 
-# Else data will append. This script does no clean-up.
+# See README.md for important instructions!
 
 # Initialize global variables........ old school habit.
 
@@ -50,8 +31,10 @@ with open(filename, newline='') as csvfile:
 			rowDateTime = datetime.fromisoformat(row['Date_Time'])
 			
 			if inUTC == True:
+				# Convert time to system's local time
 				rowDateTimeLocal = rowDateTime.astimezone()
 			else:
+				# keep it in UTC or whatever timezone came default in the CSV
 				rowDateTimeLocal = rowDateTime
 				
 
