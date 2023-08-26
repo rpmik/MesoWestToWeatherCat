@@ -10,10 +10,9 @@ Use Numbers
 1. Then delete the metadata at the top, but retain the first header row and delete the second row of units
 1. Then by Date_Time column, sort ascending so that time progress forwards toward the end of the file.
 1. After that, export the data back out to CSV for processing.
-1. Then create folders for each year there's data for. Just named YYYY (2018, 2019 etc).
-1. Put this script in their parent folder, change the variable for the starting year and 
-the CSV file name.  Then review the script’s code to make sure it’ll work for you, then
-run the script using python3
+1. Then create folders for each year there's data for. Folders are named YYYY (2018, 2019 etc).
+1. Put this script in their parent folder, edit the script, and at minimum change the variable for the starting year and  the CSV file name.
+1. Then review the script’s code to make sure it’ll work for you, then on the command line run the script using python3
 
 When the script is done, use bbedit multi-file find and replace the odd upside-down question 
 mark character (\x{0D}) in all the files with nothing. No idea why that happens.
