@@ -20,15 +20,15 @@ mark character (\x{0D}) in all the files with nothing. No idea why that happens.
 
 **Make a WeatherCat backup!**
 
-**REVIEW THE DATA OUTPUT AND MAKE SURE IT MAKES SENSE BEFORE COPYING TO WEATHERCAT DATA FOLDER!**
+**REVIEW THE DATA OUTPUT AND MAKE SURE IT MAKES SENSE BEFORE COPYING TO THE WEATHERCAT DATA FOLDER!**
 
 **QAQC IS IMPORTANT**
 
-Quit WeatherCat. Being sure you don't overwrite existing data, copy year folders to (usually):
+Quit WeatherCat. Being sure you don't overwrite existing data, copy year folders to the WeatherCat data folder at (usually):
 
     ~/Library/WeatherCatData/Location1
 
-You may need to append or prefix data in existing WeatherCat data files. If you do that, delete the related .hrs files.
+You may need to prefix data rows in existing WeatherCat data files. If you do that, delete the related .hrs files.
 
 Run WeatherCat and, again, **QAQC the results**. You can restore from backup if needed and adjust the scripts and/or CSV to correct errors.
 
